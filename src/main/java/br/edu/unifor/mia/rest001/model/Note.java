@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 @Table(name = "notes")
 @EntityListeners(AuditingEntityListener.class)
-@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
+@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true, allowSetters = true)
 public class Note implements Serializable {
 
 	private static final long serialVersionUID = 7347398902406591203L;
